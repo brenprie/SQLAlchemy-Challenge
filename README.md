@@ -105,7 +105,7 @@ _App launcher_
 
 
 ## Resources
-* https://docs.python.org/3/library/datetime.html
+* Python Libary, datetime -- https://docs.python.org/3/library/datetime.html
 
 ## Acknowledgements - Data Source
 
