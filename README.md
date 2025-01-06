@@ -52,6 +52,11 @@ _Analyses_
   ![Screenshot 2025-01-05 at 23 32 03](https://github.com/user-attachments/assets/ef6533ad-0b1c-4d2e-a447-cd84f667b745)
 5. Close your session.
 
+_Analyses_
+    ![Screenshot 2025-01-06 at 14 49 11](https://github.com/user-attachments/assets/af2623c5-8fc5-4858-aa5a-e957c280d8ef)
+    ![Screenshot 2025-01-06 at 14 49 25](https://github.com/user-attachments/assets/55275fdc-ddd8-454e-bba0-a11e5c79e5a9)
+
+
 ## Part 2: Design Your Climate App
 
 Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
