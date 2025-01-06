@@ -14,14 +14,14 @@ In this section, you’ll use Python and SQLAlchemy to do a basic climate analys
 * Perform a precipitation analysis and a station analysis by completing the steps in the following two subsections.
 
 _Import dependencies_
-    ![Screenshot 2025-01-06 at 13 43 10](https://github.com/user-attachments/assets/6064b0bb-404c-4069-996f-1871caf55f8b)
+    ![Screenshot 2025-01-06 at 14 42 28](https://github.com/user-attachments/assets/9318dcd5-c7e2-4471-9ca0-a0486adfdcf7)
 
 _Reflect tables into SQLAlchemy ORM_
-    ![Screenshot 2025-01-06 at 13 58 37](https://github.com/user-attachments/assets/a262907a-286f-4d36-81f1-5de1a945cb31)
+    ![Screenshot 2025-01-06 at 14 42 40](https://github.com/user-attachments/assets/04af665b-3ef7-4ba0-9c18-d2d67ae69719)
 
 _While not requested, before starting analyses I inspected contents of tables (column names and types)_
-    ![Screenshot 2025-01-06 at 14 02 22](https://github.com/user-attachments/assets/9597366e-7c55-4018-8e78-45faf1d6aab2)
-    
+    ![Screenshot 2025-01-06 at 14 42 56](https://github.com/user-attachments/assets/e73d44ba-dce2-4ba5-b076-1c253a451adc)
+
 ### Precipitation Analysis
 
 1. Find the most recent date in the dataset.
@@ -34,8 +34,8 @@ _While not requested, before starting analyses I inspected contents of tables (c
 7. Use Pandas to print summary statistics for the precipitation data.
 
 _Analyses_
-   ![Screenshot 2025-01-06 at 14 06 22](https://github.com/user-attachments/assets/607237c9-8f6e-43a3-8779-9d6600789ae0)
-   ![Screenshot 2025-01-06 at 13 51 04](https://github.com/user-attachments/assets/b0526262-9025-4ae0-b043-b09ed2188de3)
+    ![Screenshot 2025-01-06 at 14 39 54](https://github.com/user-attachments/assets/ed0b9f90-b911-4ada-9e8e-21e15c1c1a9b)
+    ![Screenshot 2025-01-06 at 14 40 07](https://github.com/user-attachments/assets/42a08b37-bdfd-4ae8-8528-54936c530c12)
 
 
 ### Station Analysis
@@ -76,3 +76,5 @@ Hints:
 * Join the station and measurement tables for some of the queries.
 * Use the Flask jsonify function to convert your API data to a valid JSON response object.
 
+## Resources
+* https://docs.python.org/3/library/datetime.html
