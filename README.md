@@ -8,13 +8,20 @@ You've decided to treat yourself to a long holiday in Honolulu, Hawaii. To help 
 
 In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 
-1. Use the provided files (climate_starter.ipynb and hawaii.sqlite) to complete your climate analysis and data exploration.
-2. Use the SQLAlchemy create_engine() function to connect to your SQLite database.
-3. Use the SQLAlchemy automap_base() function to reflect your tables into classes, and then save references to the classes named station and measurement.
-4. Link Python to the database by creating a SQLAlchemy session.
-IMPORTANT: Close session at end of notebook.
-5. Perform a precipitation analysis and then a station analysis by completing the steps in the following two subsections.
+* Use the SQLAlchemy create_engine() function to connect to the SQLite database.
+* Use the SQLAlchemy automap_base() function to reflect the tables into classes, and then save references to the classes named station and measurement.
+* Link Python to the database by creating a SQLAlchemy session. IMPORTANT: Close session at end of notebook.
+* Perform a precipitation analysis and a station analysis by completing the steps in the following two subsections.
 
+_Import dependencies_
+    ![Screenshot 2025-01-06 at 13 43 10](https://github.com/user-attachments/assets/6064b0bb-404c-4069-996f-1871caf55f8b)
+
+_Reflect tables into SQLAlchemy ORM_
+    ![Screenshot 2025-01-06 at 13 58 37](https://github.com/user-attachments/assets/a262907a-286f-4d36-81f1-5de1a945cb31)
+
+_While not requested, before starting analyses I inspected contents of tables (column names and types)_
+    ![Screenshot 2025-01-06 at 14 02 22](https://github.com/user-attachments/assets/9597366e-7c55-4018-8e78-45faf1d6aab2)
+    
 ### Precipitation Analysis
 
 1. Find the most recent date in the dataset.
@@ -24,7 +31,12 @@ IMPORTANT: Close session at end of notebook.
 5. Sort the DataFrame values by "date".
 6. Plot the results by using the DataFrame plot method, as the following image shows:
     ![Screenshot 2025-01-05 at 23 28 53](https://github.com/user-attachments/assets/31e4803b-e3e2-453f-8f36-5ec5d36e0cd7)
-7. Use Pandas to print the summary statistics for the precipitation data.
+7. Use Pandas to print summary statistics for the precipitation data.
+
+_Analyses_
+   ![Screenshot 2025-01-06 at 14 06 22](https://github.com/user-attachments/assets/607237c9-8f6e-43a3-8779-9d6600789ae0)
+   ![Screenshot 2025-01-06 at 13 51 04](https://github.com/user-attachments/assets/b0526262-9025-4ae0-b043-b09ed2188de3)
+
 
 ### Station Analysis
 
