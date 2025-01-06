@@ -4,7 +4,7 @@
 
 You've decided to treat yourself to a long holiday in Honolulu, Hawaii. To help with your trip planning, you decide to do a climate analysis about the area. The following sections outline the steps that you need to take to accomplish this task.
 
-## Part 1: Analyze and Explore the Climate Data
+## Part 1: Analyze and Explore Climate Data
 
 In this section, you’ll use Python and SQLAlchemy to do a basic climate analysis and data exploration of your climate database. Specifically, you’ll use SQLAlchemy ORM queries, Pandas, and Matplotlib. To do so, complete the following steps:
 
@@ -57,29 +57,52 @@ _Analyses_
     ![Screenshot 2025-01-06 at 14 49 25](https://github.com/user-attachments/assets/55275fdc-ddd8-454e-bba0-a11e5c79e5a9)
 
 
-## Part 2: Design Your Climate App
+## Part 2: Design Climate App
 
-Now that you’ve completed your initial analysis, you’ll design a Flask API based on the queries that you just developed. To do so, use Flask to create your routes as follows:
+Design a Flask API based on the queries that you just developed. To do so, use Flask to create the routes as specified below.
+
+_Preliminaries_
+![Screenshot 2025-01-06 at 15 02 02](https://github.com/user-attachments/assets/a4de440e-5966-4845-869a-849aef8f325c)
 
 1. /
-    * Start at the homepage.
-    * List all the available routes.
-2. /api/v1.0/precipitation
-    * Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
-    * Return the JSON representation of your dictionary.
-3. /api/v1.0/stations
-    * Return a JSON list of stations from the dataset.
-4. /api/v1.0/tobs
-    * Query the dates and temperature observations of the most-active station for the previous year of data.
-    * Return a JSON list of temperature observations for the previous year.
-5. /api/v1.0/<start> and /api/v1.0/<start>/<end>
-    * Return a JSON list of the minimum temperature, the average temperature, and the maximum temperature for a specified start or start-end range.
-    * For a specified start, calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date.
-    * For a specified start date and end date, calculate TMIN, TAVG, and TMAX for the dates from the start date to the end date, inclusive.
+* List all the available routes.
+* _Code_
+  ![Screenshot 2025-01-06 at 15 02 19](https://github.com/user-attachments/assets/d8a4aadc-6822-4631-8f36-a997cdcc4797)
+* _Output_
+  ![Screenshot 2025-01-06 at 14 56 05](https://github.com/user-attachments/assets/2e657ad2-e118-409c-b68c-afc0f749290e)
 
-Hints:
-* Join the station and measurement tables for some of the queries.
-* Use the Flask jsonify function to convert your API data to a valid JSON response object.
+2. /api/v1.0/precipitation
+* Convert query results from precipitation analysis (i.e. the last 12 months of data) to dictionary using date as the key and prcp as the value; return JSON representation of dictionary.
+* _Code_
+  ![Screenshot 2025-01-06 at 15 02 40](https://github.com/user-attachments/assets/bedcd51f-f3a4-4fa8-8032-2aad06c4de7f)
+* _Output_
+  ![Screenshot 2025-01-06 at 14 56 24](https://github.com/user-attachments/assets/9c9221aa-37d2-4687-b3c1-05a405b8a678)
+
+3. /api/v1.0/stations
+* Return JSON list of stations from data set.
+* _Code_
+   ![Screenshot 2025-01-06 at 15 02 51](https://github.com/user-attachments/assets/b305bb15-e683-40c7-9592-9d5985c9a3b1)
+* _Output_
+   ![Screenshot 2025-01-06 at 14 56 43](https://github.com/user-attachments/assets/52115568-d6af-47fb-8df7-93ac053bda59)
+
+4. /api/v1.0/tobs
+* Query dates and temperature observations of the most-active station for the previous year of data; return JSON list of temperature observations for previous year.
+* _Code_
+   ![Screenshot 2025-01-06 at 15 03 06](https://github.com/user-attachments/assets/01403aee-c3c0-4fcb-89af-246e5623ace0)
+* _Output_    
+   ![Screenshot 2025-01-06 at 14 57 09](https://github.com/user-attachments/assets/791a4fe2-8e9f-444c-b7ce-8f2ac502b783)
+
+5. /api/v1.0/<start> and /api/v1.0/start/end
+* Return JSON list of minimum temperature, average temperature, and maximum temperature for specified start date or start date/end date range; calculate TMIN, TAVG, and TMAX for all the dates greater than or equal to the start date or for dates from start date to end date, inclusive.
+* _Code_
+   ![Screenshot 2025-01-06 at 15 00 24](https://github.com/user-attachments/assets/e8ee463f-6654-44af-a4a2-c416d98d163c)
+* _Output, using random date and date range from data set_
+   ![Screenshot 2025-01-06 at 14 57 46](https://github.com/user-attachments/assets/5f0a8489-4d45-4ec8-a201-c306341dce63)
+   ![Screenshot 2025-01-06 at 14 58 14](https://github.com/user-attachments/assets/51f66f77-2ebe-4033-84f8-91c25db8cc39)
+
+_App launcher_
+    ![Screenshot 2025-01-06 at 15 03 32](https://github.com/user-attachments/assets/9acf1e04-656d-4b6d-8bf4-a3993e8d5c1a)
+
 
 ## Resources
 * https://docs.python.org/3/library/datetime.html
