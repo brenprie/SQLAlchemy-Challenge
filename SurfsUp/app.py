@@ -1,6 +1,3 @@
-# Create our session (link) from Python to the DB
-
-
 # Import dependencies
 from flask import Flask, jsonify
 
